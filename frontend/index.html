@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#173d34" />
+  <meta name="description" content="SanketSetu — an accessible Indian Sign Language learning and communication project." />
+  <title>SanketSetu — Communication without barriers</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" data-page="home" aria-label="SanketSetu home">
+        <img src="/assets/mark.svg" alt="" class="brand-mark" />
+        <span class="brand-copy"><strong>SanketSetu</strong><small>COMMUNICATION ACCESS</small></span>
+      </a>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="nav-list">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span>Overview</span></button>
+        <button class="nav-item" data-page="translate"><span class="nav-icon">◉</span><span>Live translation</span><span class="nav-tag">LIVE</span></button>
+        <button class="nav-item" data-page="learn"><span class="nav-icon">▤</span><span>Learn ISL</span></button>
+        <button class="nav-item" data-page="practice"><span class="nav-icon">✳</span><span>Practice</span></button>
+        <button class="nav-item" data-page="history"><span class="nav-icon">◷</span><span>History</span></button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-note">
+        <div class="note-mark">i</div>
+        <div><strong>Built for access</strong><p>Designed to make everyday communication more inclusive.</p></div>
+      </div>
+      <button class="nav-item settings-link" data-page="about"><span class="nav-icon">⚙</span><span>About & feedback</span></button>
+      <div class="sidebar-foot">A COMMUNITY SERVICE PROJECT<br/><span>VERSION 1.0 · LOCAL BUILD</span></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="crumb"><span class="crumb-dot"></span><span id="crumb-label">Overview</span></div>
+        <div class="topbar-actions">
+          <div class="model-pill" id="model-pill"><span class="status-dot"></span><span>Checking model service</span></div>
+          <button class="icon-button" id="accessibility-btn" aria-label="Accessibility settings" title="Accessibility settings">Aa</button>
+          <div class="avatar" aria-label="Local guest profile">G</div>
+        </div>
+      </header>
+
+      <div class="page-wrap">
+        <section class="page active" id="page-home">
+          <div class="eyebrow">INDIAN SIGN LANGUAGE · ACCESSIBILITY</div>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1>Make every<br/><em>conversation</em> count.</h1>
+              <p class="hero-lead">A community-focused space for learning Indian Sign Language and exploring camera-based sign recognition.</p>
+              <div class="hero-actions"><button class="button button-primary" data-go="translate">Open live translation <span>↗</span></button><button class="button button-secondary" data-go="learn">Explore ISL resources</button></div>
+              <div class="hero-proof"><span class="proof-line"></span><span>LEARN · CONNECT · INCLUDE</span></div>
+            </div>
+            <div class="hero-art" aria-label="Illustration representing communication and accessibility">
+              <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+              <div class="art-card art-card-main"><div class="art-card-top"><span>COMMUNICATION</span><span class="art-live">●</span></div><div class="gesture-symbol"><span class="gesture-palm"></span><span class="gesture-finger f1"></span><span class="gesture-finger f2"></span><span class="gesture-finger f3"></span><span class="gesture-finger f4"></span><span class="gesture-thumb"></span></div><div class="art-caption"><strong>One gesture at a time.</strong><small>Understanding starts with learning.</small></div></div>
+              <div class="floating-note note-top"><span class="mini-icon">Aa</span><span><b>Text</b><small>Clear output</small></span></div>
+              <div class="floating-note note-bottom"><span class="mini-wave">)))</span><span><b>Voice</b><small>Speak it aloud</small></span></div>
+            </div>
+          </div>
+
+          <div class="section-heading"><div><div class="eyebrow">YOUR WORKSPACE</div><h2>Choose where to begin</h2></div><span class="section-aside">A simple starting point for everyone.</span></div>
+          <div class="feature-grid">
+            <article class="feature-card feature-green"><div class="feature-head"><span class="feature-icon">◉</span><span class="feature-index">01 / CAMERA</span></div><h3>Sign to text</h3><p>Use your camera to send a short sign-language clip to a configured recognition model and receive a text prediction.</p><button class="text-link" data-go="translate">Start translating <span>→</span></button></article>
+            <article class="feature-card feature-paper"><div class="feature-head"><span class="feature-icon">▤</span><span class="feature-index">02 / LEARNING</span></div><h3>Learn ISL</h3><p>Explore beginner vocabulary and trusted video dictionaries created by Indian Sign Language experts.</p><button class="text-link" data-go="learn">Open learning space <span>→</span></button></article>
+            <article class="feature-card feature-sand"><div class="feature-head"><span class="feature-icon">✳</span><span class="feature-index">03 / PRACTICE</span></div><h3>Build confidence</h3><p>Revisit words and meanings with short practice rounds designed for beginners.</p><button class="text-link" data-go="practice">Try a practice round <span>→</span></button></article>
+          </div>
+
+          <div class="lower-grid">
+            <article class="info-panel"><div class="panel-title"><div><div class="eyebrow">PROJECT PURPOSE</div><h3>Technology with a human focus.</h3></div><span class="panel-number">A / 01</span></div><p>SanketSetu is designed to support communication access, encourage ISL learning and demonstrate how computer vision can assist inclusive interactions. It is a student community-service project, not a replacement for qualified interpreters.</p><a class="inline-resource" href="https://islrtc.nic.in/" target="_blank" rel="noreferrer">About ISLRTC <span>↗</span></a></article>
+            <article class="stats-panel"><div class="eyebrow">YOUR LOCAL ACTIVITY</div><div class="stats-row"><div><strong id="stat-count">0</strong><span>Saved translations</span></div><div><strong id="stat-words">0</strong><span>Words explored</span></div></div><div class="stats-foot">Your history stays in this local project's SQLite database.</div></article>
+          </div>
+        </section>
+
+        <section class="page" id="page-translate">
+          <div class="page-intro"><div><div class="eyebrow">CAMERA WORKSPACE · SIGN TO TEXT</div><h1>Live <em>translation</em></h1><p>Frame a sign clearly, keep the movement in view, then review the model's prediction.</p></div><div class="mode-chip"><span class="status-dot"></span> CAMERA SESSION</div></div>
+          <div class="translate-layout">
+            <div class="camera-panel">
+              <div class="camera-head"><div><span class="panel-kicker">01 / CAMERA INPUT</span><h3>Camera preview</h3></div><span class="camera-state" id="camera-state">NOT STARTED</span></div>
+              <div class="camera-stage" id="camera-stage"><video id="camera-video" autoplay playsinline muted></video><canvas id="camera-canvas" hidden></canvas><div class="camera-placeholder" id="camera-placeholder"><div class="camera-crosshair">＋</div><strong>Your camera preview will appear here</strong><span>Allow camera access to begin. Your video is not saved by SanketSetu.</span></div><div class="camera-overlay"><span class="rec-indicator" id="rec-indicator"></span><span id="camera-overlay-text">PREVIEW OFF</span><span class="camera-resolution">16 : 9</span></div></div>
+              <div class="camera-controls"><button class="button button-primary" id="camera-start">Enable camera</button><button class="button button-secondary" id="stream-toggle" disabled>Start recognition</button><button class="button button-quiet" id="camera-stop" disabled>Stop</button></div>
+              <div class="camera-foot"><span>TIP</span><p>Use even lighting, keep both hands visible and avoid busy backgrounds.</p></div>
+            </div>
+            <div class="result-column">
+              <div class="result-panel"><div class="result-head"><div><span class="panel-kicker">02 / MODEL OUTPUT</span><h3>Recognised sign</h3></div><span class="result-spark">✳</span></div><div class="prediction-box" id="prediction-box"><span class="prediction-label" id="prediction-label">WAITING FOR INPUT</span><strong id="prediction-text">—</strong><p id="prediction-description">Your latest prediction will appear here when an AI provider is configured.</p></div><div class="confidence-row"><span>MODEL CONFIDENCE</span><strong id="confidence-value">—</strong></div><div class="confidence-track"><span id="confidence-bar"></span></div><div class="model-warning" id="model-warning"><strong>Model service not configured</strong><p>Configure GEMINI_API_KEY for experimental Gemini vision, or a dedicated ISL model endpoint. Experimental guesses are not validated ISL translations.</p></div></div>
+              <div class="sentence-panel"><div class="result-head"><div><span class="panel-kicker">03 / SENTENCE BUILDER</span><h3>Your message</h3></div><span class="word-count" id="word-count">0 WORDS</span></div><div class="sentence-output" id="sentence-output">Your recognised words will collect here. You can edit the sentence before speaking or saving it.</div><textarea id="sentence-editor" class="sentence-editor" rows="3" aria-label="Edit your assembled sentence" placeholder="Edit or build your message here…"></textarea><div class="sentence-actions"><button class="button button-primary button-small" id="speak-btn">Speak aloud</button><button class="button button-secondary button-small" id="copy-btn">Copy text</button><button class="button button-secondary button-small" id="save-btn">Save</button><button class="button button-quiet button-small" id="clear-btn">Clear</button></div><div class="sentence-note" id="sentence-note" aria-live="polite"></div></div>
+            </div>
+          </div>
+          <div class="privacy-strip"><span class="privacy-icon">⌑</span><div><strong>Camera privacy</strong><p>Frames are streamed to the model service you configure. This app does not write camera frames to disk. Do not use it with bystanders without their consent.</p></div></div>
+        </section>
+
+        <section class="page" id="page-learn">
+          <div class="page-intro"><div><div class="eyebrow">LEARNING SPACE · INDIAN SIGN LANGUAGE</div><h1>Start with <em>understanding.</em></h1><p>Explore beginner topics and use trusted sign-language demonstrations from official sources.</p></div><a class="button button-primary" href="https://divyangjan.depwd.gov.in/islrtc/" target="_blank" rel="noreferrer">Open official ISL dictionary ↗</a></div>
+          <div class="resource-banner"><div class="resource-emblem">ISL</div><div><span class="panel-kicker">OFFICIAL LEARNING RESOURCE</span><h3>Indian Sign Language Dictionary</h3><p>The Government of India's ISLRTC dictionary provides video signs with English and Hindi equivalents. SanketSetu links to this source rather than copying videos without permission.</p><a href="https://divyangjan.depwd.gov.in/islrtc/" target="_blank" rel="noreferrer" class="text-link">Browse official video dictionary <span>↗</span></a></div></div>
+          <div class="phrase-lookup"><div class="phrase-lookup-copy"><span class="panel-kicker">TEXT → SIGN REFERENCE</span><h3>Look up a phrase in the official dictionary.</h3><p>Type a short message. SanketSetu will split it into words and open the official ISL dictionary's alphabetical list for each term, where you can select its verified video entry.</p></div><div class="phrase-lookup-form"><label for="phrase-input">Your phrase</label><textarea id="phrase-input" rows="2" placeholder="For example: hello, thank you for your help"></textarea><button class="button button-primary button-small" id="phrase-lookup-btn">Find signs in dictionary ↗</button><div id="phrase-results" class="phrase-results" aria-live="polite"></div></div></div>
+          <div class="section-heading compact"><div><div class="eyebrow">FOUNDATION VOCABULARY</div><h2>Words to explore</h2></div><div class="search-wrap"><span>⌕</span><input id="vocab-search" type="search" placeholder="Search a word or meaning…" aria-label="Search vocabulary" /></div></div>
+          <div class="vocab-grid" id="vocab-grid"></div>
+          <div class="resource-list-panel"><div class="eyebrow">TRUSTED RESOURCES</div><div id="resource-list"></div></div>
+          <p class="disclaimer">Vocabulary cards are learning prompts, not a substitute for signed demonstrations. Sign languages have their own grammar and regional variation; verify the actual sign in the official dictionary or with a qualified ISL educator.</p>
+        </section>
+
+        <section class="page" id="page-practice">
+          <div class="page-intro"><div><div class="eyebrow">PRACTICE ROOM · BEGINNER VOCABULARY</div><h1>Learn by <em>revisiting.</em></h1><p>A short vocabulary recall activity to help you remember English and Hindi meanings.</p></div><span class="mode-chip">NO CAMERA REQUIRED</span></div>
+          <div class="practice-layout"><div class="practice-card"><div class="practice-progress"><span id="practice-step">QUESTION 01 / 05</span><span id="practice-score">SCORE 0</span></div><div class="practice-rule"></div><div class="eyebrow">SELECT THE MATCHING WORD</div><div class="practice-prompt" id="practice-prompt">Loading question…</div><div class="practice-hint" id="practice-hint">Choose the English word that matches the meaning.</div><div class="answer-grid" id="answer-grid"></div><div class="practice-feedback" id="practice-feedback" aria-live="polite"></div><div class="practice-footer"><button class="button button-primary" id="practice-next" disabled>Next question →</button><button class="text-link" id="practice-restart">Restart round</button></div></div><aside class="practice-aside"><div class="eyebrow">WHY PRACTICE?</div><h3>Small steps help build familiarity.</h3><p>This activity tests vocabulary recall only. It does not assess whether a user can produce or understand a sign correctly.</p><a href="https://divyangjan.depwd.gov.in/islrtc/" target="_blank" rel="noreferrer" class="inline-resource">Check the sign in the official dictionary ↗</a></aside></div>
+        </section>
+
+        <section class="page" id="page-history">
+          <div class="page-intro"><div><div class="eyebrow">YOUR WORKSPACE · SAVED ITEMS</div><h1>Translation <em>history.</em></h1><p>Review messages that you chose to save on this device.</p></div><button class="button button-secondary" id="clear-history-btn">Clear all history</button></div>
+          <div class="history-panel"><div class="history-heading"><div><span class="panel-kicker">LOCAL RECORDS</span><h3>Saved messages</h3></div><span id="history-total" class="word-count">0 ITEMS</span></div><div id="history-list" class="history-list"></div></div>
+        </section>
+
+        <section class="page" id="page-about">
+          <div class="page-intro"><div><div class="eyebrow">ABOUT THE PROJECT</div><h1>Designed around <em>people.</em></h1><p>SanketSetu is a student community-service project exploring accessible communication and ISL learning.</p></div></div>
+          <div class="about-grid"><article class="info-panel"><div class="eyebrow">OUR INTENT</div><h3>Build access, not assumptions.</h3><p>Sign languages are complete natural languages, not word-for-word gesture codes. This student project aims to offer a learning entry point and a prototype recognition workflow. It should be reviewed with Deaf and hard-of-hearing community members before any real-world reliance.</p><div class="about-points"><div><b>01</b><span>Support awareness and learning.</span></div><div><b>02</b><span>Prototype camera-based ISL word recognition.</span></div><div><b>03</b><span>Collect consent-based usability feedback.</span></div></div></article><article class="feedback-panel"><div class="eyebrow">HELP US IMPROVE</div><h3>Share feedback</h3><p>Tell us what was useful, confusing or missing. Feedback is stored locally with this project.</p><form id="feedback-form"><label for="feedback-rating">How useful was this experience?</label><select id="feedback-rating"><option value="5">5 — Very useful</option><option value="4">4 — Useful</option><option value="3">3 — Neutral</option><option value="2">2 — Not very useful</option><option value="1">1 — Not useful</option></select><label for="feedback-message">Your feedback</label><textarea id="feedback-message" rows="5" required placeholder="Share a suggestion or describe your experience…"></textarea><button class="button button-primary" type="submit">Submit feedback</button><span id="feedback-status" class="form-status" aria-live="polite"></span></form></article></div>
+          <div class="attribution"><div class="eyebrow">ACKNOWLEDGEMENTS</div><p>This project uses the MIT-licensed <a href="https://github.com/Uni-Creator/signBridge" target="_blank" rel="noreferrer">signBridge repository</a> as a technical reference and starting point. The source code, model and dataset contributions remain attributable to their respective creators. See <code>THIRD_PARTY_NOTICES.md</code>.</p></div>
+        </section>
+      </div>
+      <footer class="app-footer"><span>© 2026 SANKETSETU · COMMUNITY SERVICE PROJECT</span><span>MADE FOR MORE ACCESSIBLE CONVERSATIONS</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="accessibility-popover" id="accessibility-popover" hidden><div class="popover-head"><strong>Reading preferences</strong><button id="close-accessibility" aria-label="Close">×</button></div><label class="switch-row"><span>High contrast</span><input type="checkbox" id="contrast-toggle" /></label><label class="switch-row"><span>Larger text</span><input type="checkbox" id="text-toggle" /></label></div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

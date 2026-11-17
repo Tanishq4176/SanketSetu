@@ -1,0 +1,4 @@
+# Optional: installs landmark preprocessing. Use Python 3.12 where possible.
+mediapipe==1.0.1
+numpy>=1.26,<3.0
+opencv-python-headless>=4.10,<5.0
