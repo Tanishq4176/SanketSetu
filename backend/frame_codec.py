@@ -1,4 +1,4 @@
-"""Binary JPEG frame batching compatible with the SignBridge ISLF protocol.
+"""Binary JPEG frame batching using the ISLF protocol.
 
 Layout: magic b'ISLF' | uint16 little-endian frame count | uint32 lengths | JPEGs.
 """

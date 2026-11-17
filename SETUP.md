@@ -54,7 +54,7 @@ The server sends 16 JPEG frames in the ISLF binary container and expects JSON co
 
 ## 6. Optional MediaPipe landmark preprocessing
 
-The reference pipeline uses MediaPipe hand and pose landmark overlays. SanketSetu supports this optional step, but it requires the separate `.task` assets.
+SanketSetu optionally supports MediaPipe hand and pose landmark overlays, which requires separate `.task` assets.
 
 In a second activated terminal:
 

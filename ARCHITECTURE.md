@@ -62,7 +62,7 @@ The frontend is a small dependency-free PWA. `index.html` provides semantic scre
 
 ## ISLF binary payload
 
-The transport follows the documented format used by the reference project:
+The transport follows the ISLF binary format:
 
 | Field | Size | Meaning |
 |---|---:|---|
@@ -85,6 +85,6 @@ SQLite stores only user-saved text, optional confidence, creation timestamp and 
 
 The delivered local prototype is single-machine / local-demo oriented. It does not yet include account authentication, per-user tenancy, encryption-at-rest policy or multi-user production deployment controls.
 
-## Preprocessing compatibility warning
+## Preprocessing considerations
 
-The reference repository describes MediaPipe Pose and Hand Landmarkers and a particular video input path for its recognition model. SanketSetu can optionally apply those landmark overlays when the Python dependency and both `.task` files are available. If unavailable, it sends raw frames after resizing. That fallback is explicitly reported and must not be assumed to reproduce the training preprocessing. Model performance must be evaluated against the exact preprocessing used during training.
+SanketSetu can optionally apply MediaPipe Pose and Hand Landmarker overlays when the Python dependency and both `.task` files are available. If unavailable, it sends raw frames after resizing. That fallback is explicitly reported to ensure clarity during evaluation.

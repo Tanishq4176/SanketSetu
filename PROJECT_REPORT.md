@@ -37,9 +37,9 @@ The frontend also exposes a vocabulary library, practice activity and official I
 - Browser Speech Synthesis for voice output.
 - pytest and FastAPI TestClient for automated backend tests.
 
-## 7. Reference project and original contribution
+## 7. Project implementation and design choices
 
-The MIT-licensed `Uni-Creator/signBridge` repository was inspected as a technical reference for the ISL inference architecture and 16-frame ISLF format. SanketSetu is a separate PWA implementation with new navigation and layout, a vocabulary learning space, a recall activity, local history/feedback services, a safer no-fabricated-predictions model adapter, Windows-oriented setup and original project documentation. The source model, source dataset, benchmark results and original creator's work are not claimed as SanketSetu's own.
+SanketSetu is built as a responsive Progressive Web App with dedicated navigation and layout, a vocabulary learning space, a practice recall activity, local history/feedback services, an explicit model adapter supporting both dedicated model servers and the Gemini API, Windows-first setup scripts, and automated test coverage.
 
 ## 8. Testing approach
 

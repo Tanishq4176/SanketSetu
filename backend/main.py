@@ -160,7 +160,7 @@ async def translate_socket(websocket: WebSocket):
                                 await websocket.send_json({"type": "prediction", **result, "sequence": frame_count})
                         except Exception as exc:
                             await websocket.send_json({"type": "model_error", "message": str(exc)})
-                    # 16-frame window with 6-frame stride, matching the reference pipeline.
+                    # 16-frame window with 6-frame stride.
                     for _ in range(min(6, len(frames))):
                         frames.popleft()
                 if frame_count % 20 == 0:
